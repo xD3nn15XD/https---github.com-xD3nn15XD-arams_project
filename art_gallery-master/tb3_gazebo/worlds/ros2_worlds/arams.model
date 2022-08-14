@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<sdf version='1.7'>
+  <world name='default'>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <scene>
+      <shadows>false</shadows>
+    </scene>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose>-2.04732 3.56191 2.92284 -0 0.349796 -0.733626</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+    <physics type='ode'>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>150</iters>
+          <precon_iters>0</precon_iters>
+          <sor>1.4</sor>
+          <use_dynamic_moi_rescaling>1</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>1e-05</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>2000</contact_max_correcting_vel>
+          <contact_surface_layer>0.01</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
+    <include>
+      <pose>0.0 0.0 0.8 0.0 0.0 1.571</pose>
+      <uri>model://tb3_waffle</uri>
+    </include>
+
+    <include>
+      <pose>-1.908932 0.129803 0 0 -0 0</pose>
+      <uri>model://wall</uri>
+      <name>wall_0</name>
+    </include>
+
+    <include>
+      <pose>-1.906503 1.32541 0 0 -0 0</pose>
+      <uri>model://wall</uri>
+      <name>wall_1</name>
+    </include>
+
+    <include>
+      <pose>2.99213 0.632201 0 0 0 -0.496041</pose>
+      <uri>model://wall</uri>
+      <name>wall_2</name>
+    </include>
+
+    <include>
+      <pose>3.27717 1.75486 0 0 -0 0</pose>
+      <uri>model://wall</uri>
+      <name>wall_3</name>
+    </include>
+
+    <include>
+      <pose>3.27813 2.95004 0 0 -0 0</pose>
+      <uri>model://wall</uri>
+      <name>wall_4</name>
+    </include>
+
+    <include>
+      <pose>-1.586482 3.74568 0 0 0 -0.913867</pose>
+      <uri>model://wall</uri>
+      <name>wall_5</name>
+    </include>
+
+    <include>
+      <pose>0.47454 0.129601 0 0 -0 0</pose>
+      <uri>model://wall</uri>
+      <name>wall_6</name>
+    </include>
+
+    <include>
+      <pose>2.67466 3.55304 0 0 -0 1.56875</pose>
+      <uri>model://wall</uri>
+      <name>wall_7</name>
+    </include>
+
+    <include>
+      <pose>-0.42102 1.54719 0 0 0 -0.505883</pose>
+      <uri>model://wall</uri>
+      <name>wall_8</name>
+    </include>
+
+    <include>
+      <pose>-0.05342 2.66339 0 0 0 -0.123846</pose>
+      <uri>model://wall</uri>
+      <name>wall_9</name>
+    </include>
+
+    <include>
+      <pose>1.48118 1.58183 0 0 0 -1.73706</pose>
+      <uri>model://wall</uri>
+      <name>wall_10</name>
+    </include>
+
+    <include>
+      <pose>1.75673 2.00188 0 0 -0 0.561862</pose>
+      <uri>model://wall</uri>
+      <name>wall_11</name>
+    </include>
+
+    <include>
+      <pose>1.07406 -0.483414 0 0 -0 1.55682</pose>
+      <uri>model://wall</uri>
+      <name>wall_12</name>
+    </include>
+
+    <include>
+      <pose>3.2802 4.1509 0 0 -0 0</pose>
+      <uri>model://wall</uri>
+      <name>wall_13</name>
+    </include>
+
+    <include>
+      <pose>2.68918 4.76256 0 0 -0 1.55804</pose>
+      <uri>model://wall</uri>
+      <name>wall_14</name>
+    </include>
+
+    <include>
+      <pose>1.52656 4.58769 0 0 0 -1.25968</pose>
+      <uri>model://wall</uri>
+      <name>wall_15</name>
+    </include>
+
+    <include>
+      <pose>0.40415 4.62139 0 0 -0 1.20901</pose>
+      <uri>model://wall</uri>
+      <name>wall_16</name>
+    </include>
+
+    <include>
+      <pose>-1.468225 2.31791 0 0 0 -0.838971</pose>
+      <uri>model://wall</uri>
+      <name>wall_17</name>
+    </include>
+
+    <include>
+      <pose>-2.517480 0.277400 0 0 0 1.551083</pose>
+      <uri>model://wall</uri>
+      <name>wall_18</name>
+    </include>
+
+    <include>
+      <pose>-0.63104 4.47149 0 0 0 -0.92579</pose>
+      <uri>model://wall</uri>
+      <name>wall_19</name>
+    </include>
+
+    <include>
+      <pose>-1.31036 -0.471372 0 0 -0 1.571</pose>
+      <uri>model://wall</uri>
+      <name>wall_20</name>
+    </include>
+
+    <include>
+      <pose>-0.11385 -0.47283 0 0 -0 1.571</pose>
+      <uri>model://wall</uri>
+      <name>wall_21</name>
+    </include>
+
+    <include>
+      <pose>2.19273 -0.194333 0 0 -0 2.094</pose>
+      <uri>model://wall</uri>
+      <name>wall_22</name>
+    </include>
+
+    <include>
+      <pose>-3.717750 0.300104 0 0 0 1.551080</pose>
+      <uri>model://wall</uri>
+      <name>wall_23</name>
+    </include>
+
+    <include>
+      <pose>-4.645820 0.790565 0 0 0 0.602378</pose>
+      <uri>model://wall</uri>
+      <name>wall_24</name>
+    </include>
+
+    <include>
+      <pose>-5.321955 1.772070 0 0 0 0.602378</pose>
+      <uri>model://wall</uri>
+      <name>wall_25</name>
+    </include>
+
+    <include>
+      <pose>-5.655386 2.856297 0 0 0 -0.008344</pose>
+      <uri>model://wall</uri>
+      <name>wall_26</name>
+    </include>
+
+    <include>
+      <pose>-5.644720 4.049430 0 0 0 -0.008344</pose>
+      <uri>model://wall</uri>
+      <name>wall_27</name>
+    </include>
+
+    <include>
+      <pose>-5.634370 5.249930 0 0 0 -0.008344</pose>
+      <uri>model://wall</uri>
+      <name>wall_28</name>
+    </include>
+
+    <include>
+      <pose>-5.450646 6.419768 0 0 0 -0.299516</pose>
+      <uri>model://wall</uri>
+      <name>wall_29</name>
+    </include>
+
+    <include>
+      <pose>-4.911128 7.459997 0 0 0 -0.662652</pose>
+      <uri>model://wall</uri>
+      <name>wall_30</name>
+    </include>
+
+    <include>
+      <pose>-3.984020 8.083140 0 0 0 1.829646</pose>
+      <uri>model://wall</uri>
+      <name>wall_31</name>
+    </include>
+
+    <include>
+      <pose>-2.975292 7.826645 0 0 0 0.807307</pose>
+      <uri>model://wall</uri>
+      <name>wall_32</name>
+    </include>
+
+    <include>
+      <pose>-1.982262 7.196813 0 0 0 1.208361</pose>
+      <uri>model://wall</uri>
+      <name>wall_33</name>
+    </include>
+
+    <include>
+      <pose>-0.885138 7.242287 0 0 0 -1.117350</pose>
+      <uri>model://wall</uri>
+      <name>wall_34</name>
+    </include>
+
+    <include>
+      <pose>0.255571 7.480777 0 0 0 1.533586</pose>
+      <uri>model://wall</uri>
+      <name>wall_35</name>
+    </include>
+
+    <include>
+      <pose>1.398275 7.226903 0 0 0 1.167259</pose>
+      <uri>model://wall</uri>
+      <name>wall_36</name>
+    </include>
+
+    <include>
+      <pose>1.995067 6.386134 0 0 0 0.076248</pose>
+      <uri>model://wall</uri>
+      <name>wall_37</name>
+    </include>
+
+    <include>
+      <pose>2.351368 5.279296 0 0 0 0.541635</pose>
+      <uri>model://wall</uri>
+      <name>wall_38</name>
+    </include>
+
+    <include>
+      <pose>-3.679385 3.902946 0 0 0 -0.360631</pose>
+      <uri>model://wall</uri>
+      <name>wall_39</name>
+    </include>
+
+    <include>
+      <pose>-3.248980 5.024480 0 0 0 -0.360631</pose>
+      <uri>model://wall</uri>
+      <name>wall_40</name>
+    </include>
+
+    <include>
+      <pose>-3.415800 6.052137 0 0 0 0.671838</pose>
+      <uri>model://wall</uri>
+      <name>wall_41</name>
+    </include>
+
+  </world>
+</sdf>
